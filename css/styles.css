@@ -1,0 +1,108 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+/* ব্যাকগ্রাউন্ড ইমেজ এবং কালো ছায়া */
+.intro {
+    position: relative;
+    background: url('../images/background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* কালো Overlay যোগ করা */
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* ৫০% অন্ধকার */
+    z-index: 1;
+}
+/* টেক্সট ও কন্টেন্ট উপরে রাখার জন্য */
+.intro * {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h1 span {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 15px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 16px;
+    width: 60%;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #EDEDED;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
